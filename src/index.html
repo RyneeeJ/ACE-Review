@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACE Review Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">
+        <img class="ace-logo" src="./img/ace-logo.png" />
+      </a>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#">About us</a></li>
+        <li><a class="nav-link" href="#">Why choose ACE?</a></li>
+        <li><a class="nav-link" href="#">Testimonials</a></li>
+        <li><a class="nav-link" href="#">Our Programs</a></li>
+      </ul>
+      <button class="enroll-cta">Enroll now</button>
+    </header>
+    <section class="section--hero">
+      <div class="hero">
+        <div>
+          <span class="subheading">About us</span>
+          <h1 class="heading-primary">
+            <span>Ace</span> your board examinations and be a competent
+            professional.
+          </h1>
+          <p class="hero-description">
+            Gain mastery in chemistry and food technology with the best
+            professors from the top univerities in the country, only here at ACE
+            Review Center &mdash; the leading Chemistry Review Center since
+            2010.
+          </p>
+          <div class="hero-btn-container">
+            <a class="hero-btn hero-btn--primary" href="#">Study with us</a>
+            <a class="hero-btn hero-btn--secondary" href="#"
+              >Learn more &darr;</a
+            >
+          </div>
+        </div>
+
+        <img class="hero-img" src="./img/chemicals.jpg" />
+      </div>
+    </section>
+    <section class="section section--why">
+      <span class="subheading">Why choose us?</span>
+      <div class="why-us-container">
+        <div class="feature-box">
+          <i class="ph ph-medal icons"></i>
+          <div class="feature-title">Competent Instructors</div>
+          <p class="feature-description">
+            Courses will be taught by board exam top-notchers.
+          </p>
+        </div>
+        <div class="feature-box">
+          <i class="ph ph-chart-line-up icons"></i>
+          <div class="feature-title">High Passing Rate</div>
+          <p class="feature-description">
+            Last year, ACE has a passing rate of 84%. The national passing rate
+            (chemistry boards) was 62%.
+          </p>
+        </div>
+        <div class="feature-box">
+          <i class="ph ph-laptop icons"></i>
+          <div class="feature-title">Flexible Learning</div>
+          <p class="feature-description">
+            You get to choose between on-site and virtual review setting.
+          </p>
+        </div>
+        <div class="feature-box">
+          <i class="ph ph-notebook icons"></i>
+          <div class="feature-title">Updated Learning Modules</div>
+          <p class="feature-description">
+            The topics are annually updated based on the syllabus released by
+            the Board of Chemistry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--testimonials">
+      <i class="ph ph-atom background-icon background-icon-atom"></i>
+      <i class="ph ph-flask background-icon background-icon-flask"></i>
+      <span class="subheading">Testimonials</span>
+      <div class="testimonial-slider">
+        <div class="testimonial-slides">
+          <div>
+            <blockquote class="testimonial-text">
+              "I'm glad that I enrolled here in ACE. The instructors were very
+              detailed and meticuluous when it comes to explaining the lessons.
+              They make sure that each student can easily grasp the information
+              about each topic."
+            </blockquote>
+            <div class="testimonial-author">
+              <p>John Steven S. Cruz</p>
+              <p>Top 3, Chemist Licensure Exam 2022</p>
+            </div>
+          </div>
+          <img class="testimonial-img" src="./img/john-steven.jpg" />
+        </div>
+        <div class="testimonial-slides">
+          <div>
+            <blockquote class="testimonial-text">
+              "Each session of my review journey here at ACE was very engaging.
+              The instructors reinforce the discussion by giving a lot of
+              problems regarding the topic. Their catchy mnemonics helped me a
+              lot in my journey as becoming a professional chemist."
+            </blockquote>
+            <div class="testimonial-author">
+              <p>Sofia C. Sy</p>
+              <p>Top 1, Chemist Licensure Exam 2022</p>
+            </div>
+          </div>
+          <img class="testimonial-img" src="./img/sofia.jpg" />
+        </div>
+        <div class="testimonial-slides">
+          <div>
+            <blockquote class="testimonial-text">
+              "They really prepare their students not only by teaching the
+              topics and courses but also by giving tips and strategies on how
+              to be ready on taking the examination. It is definitely true that
+              choosing the right mentor makes a big difference."
+            </blockquote>
+            <div class="testimonial-author">
+              <p>Maria F. Guevarra</p>
+              <p>Top 5, Chemical Technician Licensure Exam 2023</p>
+            </div>
+          </div>
+          <img class="testimonial-img" src="./img/maria.jpg" />
+        </div>
+        <button class="btn--slider btn--left">
+          <i class="ph ph-arrow-left btn--icon"></i>
+        </button>
+        <button class="btn--slider btn--right">
+          <i class="ph ph-arrow-right btn--icon"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="section section--programs">
+      <i class="ph ph-atom background-icon background-icon-atom"></i>
+      <i class="ph ph-flask background-icon background-icon-flask"></i>
+      <span class="subheading">Program offerings</span>
+      <div class="btn--container">
+        <button class="btn--tab btn--tab-active">Chemistry</button>
+        <button class="btn--tab">Chemical Technology</button>
+        <button class="btn--tab">Food Tecnology</button>
+      </div>
+      <div class="tabs--container">
+        <div class="program--tab">
+          <p class="program--title">Review for Chemistry Licensure Exam</p>
+          <p class="program--info">
+            June 23, 2024 - September 23, 2024 (Tuesday - Friday)
+          </p>
+          <ul class="program--list">
+            <li>
+              <i class="ph ph-note-pencil program--icons"></i>
+              Preliminary examination for each subject
+            </li>
+            <li>
+              <i class="ph ph-barbell program--icons"></i>
+              Assess strengths and weakness based on the preliminary results
+            </li>
+            <li>
+              <i class="ph ph-exam program--icons"></i>
+              Mock exams at the end of review calendar
+            </li>
+            <li>
+              <i class="ph ph-linkedin-logo program--icons"></i>
+              Eligible for job fair hosted by ACE
+            </li>
+          </ul>
+          <p class="program--fees">
+            Regular Fee: <span class="reg-fee">PHP 16,500.00</span> <br />
+            Early Bird Fee:
+            <strong class="discount-fee">PHP 15,000.00</strong>
+          </p>
+          <button class="enroll-cta program--btn">Enroll Now</button>
+        </div>
+        <div class="program--tab hidden">
+          <p class="program--title">Review for Chem Tech Licensure Exam</p>
+          <p class="program--info">
+            June 23, 2024 - September 23, 2024 (Tuesday & Thursday)
+          </p>
+          <ul class="program--list">
+            <li>
+              <i class="ph ph-note-pencil program--icons"></i>
+              Preliminary examination for each subject
+            </li>
+            <li>
+              <i class="ph ph-barbell program--icons"></i>
+              Assess strengths and weakness based on the preliminary results
+            </li>
+            <li>
+              <i class="ph ph-exam program--icons"></i>
+              Mock exams at the end of review calendar
+            </li>
+            <li>
+              <i class="ph ph-linkedin-logo program--icons"></i>
+              Eligible for job fair hosted by ACE
+            </li>
+          </ul>
+          <p class="program--fees">
+            Regular Fee: <span class="reg-fee">PHP 12,500.00</span> <br />
+            Early Bird Fee:
+            <strong class="discount-fee">PHP 11,000.00</strong>
+          </p>
+          <button class="enroll-cta program--btn">Enroll Now</button>
+        </div>
+        <div class="program--tab hidden">
+          <p class="program--title">Review for Food Tech Licensure Exam</p>
+          <p class="program--info">
+            July 16, 2024 - October 16, 2024 (Monday - Thursday)
+          </p>
+          <ul class="program--list">
+            <li>
+              <i class="ph ph-note-pencil program--icons"></i>
+              Preliminary examination for each subject
+            </li>
+            <li>
+              <i class="ph ph-barbell program--icons"></i>
+              Assess strengths and weakness based on the preliminary results
+            </li>
+            <li>
+              <i class="ph ph-exam program--icons"></i>
+              Mock exams at the end of review calendar
+            </li>
+            <li>
+              <i class="ph ph-linkedin-logo program--icons"></i>
+              Eligible for job fair hosted by ACE
+            </li>
+          </ul>
+          <p class="program--fees">
+            Regular Fee: <span class="reg-fee">PHP 13,500.00</span> <br />
+            Early Bird Fee:
+            <strong class="discount-fee">PHP 12,000.00</strong>
+          </p>
+          <button class="enroll-cta program--btn">Enroll Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--footer">
+      <div class="footer--grid">
+        <div>
+          <a href="#">
+            <img class="footer--logo" src="./img/ace-logo.png" />
+          </a>
+          <p class="copyright">
+            Copyright &copy; <span class="current-year">2024</span> by ACE
+            Review, Inc. All rights reserved.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Address & Contact Details</p>
+          <p class="address">
+            <i class="ph ph-map-pin footer-icon"></i> 23 Lerma St. Sampaloc,
+            Manila, Philippines
+          </p>
+
+          <div class="footer-nav">
+            <a class="footer-link" href="tel:0958-454-7822">
+              <i class="ph ph-device-mobile footer-icon"></i>
+              0958-454-7822</a
+            >
+            <a class="footer-link" href="mailto:acereview@gmail.com">
+              <i class="ph ph-envelope footer-icon"></i>
+              acereview@gmail.com</a
+            >
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Company</p>
+          <div class="footer-nav">
+            <a class="footer-link" href="#"
+              ><i class="ph ph-users-three footer-icon"></i>The ACE team</a
+            >
+            <a class="footer-link" href="#"
+              ><i class="ph ph-scroll footer-icon"></i>2023 Performance
+              Report</a
+            >
+            <a class="footer-link" href="#"
+              ><i class="ph ph-briefcase footer-icon"></i>Careers</a
+            >
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Follow us</p>
+          <div class="footer-nav">
+            <a class="footer-link" href="#"
+              ><i class="ph ph-facebook-logo footer-icon"></i> Facebook</a
+            >
+            <a class="footer-link" href="#"
+              ><i class="ph ph-twitter-logo footer-icon"></i> Twitter</a
+            >
+            <a class="footer-link" href="#"
+              ><i class="ph ph-instagram-logo footer-icon"></i> Instagram</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay hidden">&nbsp;</div>
+    <div class="modal hidden">
+      <div class="modal-inner">
+        <p class="modal-heading">Please fill out the form below</p>
+        <form class="form">
+          <div>
+            <label for="input-first-name">First Name</label>
+            <input
+              type="text"
+              id="input-first-name"
+              placeholder="Cardo"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="input-last-name">Last Name</label>
+            <input
+              type="text"
+              id="input-last-name"
+              placeholder="Dalisay"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="input-email">Email</label>
+            <input
+              type="email"
+              id="input-email"
+              placeholder="cardodalisay@gmail.com"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="select-program">What's your review program?</label>
+            <select id="select-program" required>
+              <option value="">Choose one</option>
+              <option value="chem">Chemistry</option>
+              <option value="chemtech">Chemical Technology</option>
+              <option value="foodtech">Food Technology</option>
+            </select>
+          </div>
+
+          <button class="btn--submit">Submit</button>
+        </form>
+        <p>An email will be sent shortly after submission.</p>
+        <button class="btn--close-modal">
+          <i class="ph ph-x close-modal-icon"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
