@@ -1,0 +1,244 @@
+/*****************************/
+/* BELOW 1408px */
+/*****************************/
+
+@media (max-width: 88em) {
+  /* HERO */
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .hero {
+    gap: 3rem;
+    max-width: 120rem;
+  }
+  .hero-description {
+    font-size: 1.8rem;
+  }
+
+  /* FOOTER */
+  .footer--grid {
+    gap: 2.4rem;
+  }
+
+  .footer--logo {
+    width: 14rem;
+  }
+  .footer-heading {
+    font-size: 1.8rem;
+  }
+  .address,
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 1.4rem;
+  }
+}
+
+/*****************************/
+/* BELOW 1216px */
+/*****************************/
+@media (max-width: 76em) {
+  /* GENERAL */
+  .subheading {
+    font-size: 1.4rem;
+  }
+
+  /* HEADER */
+
+  .nav-list {
+    gap: 2.2rem;
+  }
+
+  .nav-list li {
+    padding: 0 0.8rem;
+  }
+
+  /* HERO */
+
+  .hero {
+    grid-template-columns: 55fr 45fr;
+    gap: 4.2rem;
+  }
+  .heading-primary {
+    font-size: 4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .hero-description {
+    /* font-size: 1.6rem; */
+    margin-bottom: 2.8rem;
+    line-height: 1.5;
+  }
+
+  /* WHY US */
+  .why-us-container {
+    column-gap: 4.8rem;
+  }
+
+  /*  TESTIMONIALS */
+
+  .background-icon {
+    font-size: 12rem;
+  }
+
+  .atom-icon {
+    top: 70%;
+    left: 38rem;
+    z-index: 2;
+  }
+
+  .flask-icon {
+    top: 0rem;
+    right: 1rem;
+    z-index: 2;
+  }
+
+  /* FOOTER */
+
+  .section--footer {
+    padding: 9.6rem 8.2rem;
+  }
+}
+
+/*****************************/
+/* BELOW 976px */
+/*****************************/
+@media (max-width: 61em) {
+  html {
+    font-size: 50%;
+  }
+
+  .modal {
+    width: 64rem;
+  }
+
+  .why-us-container {
+    gap: 3.2rem;
+  }
+}
+
+/*****************************/
+/* BELOW 784px */
+/*****************************/
+@media (max-width: 49em) {
+  /* HEADER */
+  .nav-list {
+    gap: 0.8rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  /* HERO */
+  .section--hero {
+    padding: 4.8rem 11.2rem 9.6rem 11.2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .heading-primary {
+    margin-bottom: 2.8rem;
+  }
+
+  .hero-description {
+    margin-bottom: 3.8rem;
+  }
+  .hero-img {
+    width: 70%;
+  }
+
+  .hero-btn-container {
+    justify-content: center;
+  }
+
+  /* WHY US */
+  .why-us-container {
+    max-width: 60rem;
+    margin: 2.2rem auto 0 auto;
+  }
+  .feature-title {
+    font-size: 1.8rem;
+  }
+
+  .feature-description {
+    font-size: 1.4rem;
+  }
+
+  /* TESTIMONIALS */
+  .testimonial-slider {
+    height: 60rem;
+    max-width: 45rem;
+  }
+
+  .testimonial-slide {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 2.8rem 4.8rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .testimonial-img {
+    width: 60%;
+    grid-row: 1;
+    transform: scale(1);
+  }
+
+  .testimonial-text {
+    font-size: 1.8rem;
+  }
+
+  .atom-icon {
+    left: 86%;
+    top: -3rem;
+  }
+
+  .flask-icon {
+    display: none;
+  }
+
+  /* PROGRAMS */
+
+  .program--tab {
+    text-align: center;
+  }
+  .programs--cta {
+    position: static;
+  }
+
+  .program--title {
+    font-size: 2.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .btn--tab {
+    font-size: 1.6rem;
+  }
+  .program--info {
+    margin-bottom: 2.4rem;
+  }
+
+  .program--list {
+    align-items: center;
+  }
+
+  .fee-container {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  /* FOOTER */
+  .footer--grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+  }
+
+  .footer--logo {
+    width: 12rem;
+  }
+}
