@@ -61,6 +61,10 @@ body {
 .top-margin-sm {
   margin-top: 2.4rem;
 }
+
+.prevent-scroll {
+  overflow: hidden;
+}
 /**************************************/
 /* Header */
 /**************************************/
@@ -83,6 +87,7 @@ body {
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  transition: all 0.5s;
 }
 
 .nav-list {
@@ -113,6 +118,35 @@ body {
   color: inherit;
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: inherit;
+  z-index: 20;
+}
+
+.menu-btn-icon {
+  font-size: 4.4rem;
+}
+
+.nav-open .nav-container {
+  transform: translateX(0);
+}
+
+.btn-close-menu {
+  display: none;
+}
+
+.nav-open .btn-close-menu {
+  display: block;
+}
+
+.nav-open .btn-open-menu {
+  display: none;
 }
 
 /**************************************/
@@ -203,7 +237,6 @@ body {
 /**************************************/
 .why-us-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(2, 1fr);
   max-width: 100rem;
   margin: 3.8rem auto 0 auto;
@@ -258,7 +291,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 1.5rem rgba(68, 68, 68, 0.4);
   padding: 0.6rem;
-  z-index: 99999;
+  z-index: 5;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -389,6 +422,7 @@ body {
   transform: translateY(-50%);
   cursor: pointer;
   transition: all 0.3s;
+  letter-spacing: 1.2;
 }
 
 .btn--tab-active {
@@ -535,6 +569,7 @@ body {
   width: 100vw;
   transition: all 0.3s;
   backdrop-filter: blur(0.6rem);
+  z-index: 50;
 }
 
 .modal {
@@ -551,6 +586,7 @@ body {
   padding: 2.8rem;
 
   transition: all 0.3s;
+  z-index: 50;
 }
 
 .modal-inner {
@@ -599,8 +635,8 @@ body {
   color: #888;
 }
 
-.modal p:last-child {
-  display: inline;
+.modal-inner p:last-child {
+  display: inline-block;
   font-size: 1.2rem;
   color: #b5bec2;
 }
@@ -608,7 +644,6 @@ body {
 .btn--submit {
   grid-column: 1 / -1;
   width: 50%;
-  transform: translateX(50%);
   margin: 2rem 0;
   height: 3.8rem;
   font-size: 1.6rem;
@@ -616,6 +651,7 @@ body {
   cursor: pointer;
 
   transition: all 0.3s;
+  justify-self: center;
 }
 
 .btn--submit:hover {

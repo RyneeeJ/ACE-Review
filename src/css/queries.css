@@ -122,14 +122,54 @@
 /*****************************/
 @media (max-width: 49em) {
   /* HEADER */
-  .nav-list {
-    gap: 0.8rem;
-  }
-
   .header {
-    padding: 0 3.2rem;
+    padding: 0 4.8rem;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 1.4rem;
+    height: auto;
+    width: 40%;
   }
 
+  .nav-list li {
+    height: 7.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3.2rem;
+  }
+
+  .nav-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(237, 252, 243, 0.9);
+    gap: 4.4em;
+
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+
+    transform: translateX(100%);
+  }
+
+  .nav-cta {
+    font-size: 2.8rem;
+  }
+
+  .menu-btn {
+    display: block;
+  }
   /* HERO */
   .section--hero {
     padding: 4.8rem 11.2rem 9.6rem 11.2rem;
@@ -204,9 +244,15 @@
 
   /* PROGRAMS */
 
+  .tabs--container,
+  .program-btn--container {
+    max-width: 60rem;
+  }
+
   .program--tab {
     text-align: center;
   }
+
   .programs--cta {
     position: static;
   }
@@ -240,5 +286,91 @@
 
   .footer--logo {
     width: 12rem;
+  }
+
+  /* MODAL */
+  .modal {
+    height: 60rem;
+    width: 75%;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .modal p:last-child {
+    font-size: 1.4rem;
+  }
+
+  .btn--submit {
+    height: 4.6rem;
+    font-size: 1.8rem;
+    width: 60%;
+  }
+}
+
+/*****************************/
+/* BELOW 576px */
+/*****************************/
+
+@media (max-width: 36em) {
+  .section {
+    padding: 7.2rem 5.2rem;
+  }
+
+  /* HERO */
+  .section--hero {
+    padding: 2.4rem 3.2rem 6.4rem 3.2rem;
+  }
+
+  /* WHY US */
+  .why-us-container {
+    grid-template-columns: 1fr;
+    max-width: 38rem;
+    gap: 4.2;
+  }
+
+  /* PROGRAMS */
+
+  .btn--tab {
+    font-size: 1.4rem;
+  }
+  .program--title {
+    font-size: 2.2rem;
+  }
+
+  .program--info {
+    font-size: 1.2rem;
+  }
+
+  .program--list {
+    font-size: 1.4rem;
+  }
+
+  .program--fees {
+    font-size: 1.6rem;
+  }
+
+  .tabs--container {
+    padding: 0.2rem 1.8rem 1.8rem 1.8rem;
+  }
+
+  /* TESTIMONIALS */
+  .atom-icon {
+    display: none;
+  }
+
+  .testimonial-author {
+    line-height: 1.2;
+  }
+
+  /* FOOTER */
+  .section--footer {
+    padding: 7.2rem 3.2rem;
+  }
+
+  .footer--grid {
+    column-gap: 2.6rem;
+    row-gap: 3.4rem;
   }
 }
