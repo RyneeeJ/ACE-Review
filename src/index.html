@@ -20,14 +20,22 @@
   <body>
     <header class="header">
       <a class="logo" href="#">
-        <img class="ace-logo" src="./img/ace-logo.png" />
+        <img class="ace-logo" src="./img/acereview-logo.png" />
       </a>
       <nav class="nav-container">
         <ul class="nav-list">
-          <li><a class="nav-link" href="#">About us</a></li>
-          <li><a class="nav-link" href="#">Why choose ACE?</a></li>
-          <li><a class="nav-link" href="#">Testimonials</a></li>
-          <li><a class="nav-link" href="#">Our Programs</a></li>
+          <li>
+            <a class="nav-link" href="#"><div>About us</div></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#why-us"><div>Why choose ACE?</div></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#testimonials"><div>Testimonials</div></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#programs"><div>Our Programs</div></a>
+          </li>
         </ul>
         <button class="enroll-cta nav-cta">Enroll now</button>
       </nav>
@@ -36,7 +44,7 @@
         <i class="ph ph-x menu-btn-icon btn-close-menu"></i>
       </button>
     </header>
-    <section class="section--hero">
+    <section class="section--hero" id="hero">
       <div class="hero">
         <div>
           <!-- <span class="subheading">About us</span> -->
@@ -50,8 +58,10 @@
             2010.
           </p>
           <div class="hero-btn-container">
-            <a class="hero-btn hero-btn--primary" href="#">Study with us</a>
-            <a class="hero-btn hero-btn--secondary" href="#"
+            <a class="hero-btn hero-btn--primary" href="#programs"
+              >Study with us</a
+            >
+            <a class="hero-btn hero-btn--secondary" href="#why-us"
               >Learn more &darr;</a
             >
           </div>
@@ -60,7 +70,7 @@
         <img class="hero-img" src="./img/chemicals.jpg" />
       </div>
     </section>
-    <section class="section section--why">
+    <section class="section section--why" id="why-us">
       <span class="subheading">Why choose us?</span>
       <div class="why-us-container">
         <div class="feature-box">
@@ -96,7 +106,7 @@
       </div>
     </section>
 
-    <section class="section section--testimonials">
+    <section class="section section--testimonials" id="testimonials">
       <span class="subheading">Testimonials</span>
       <div class="testimonial-slider">
         <button class="btn--slider btn--left">
@@ -107,76 +117,72 @@
         </button>
         <div class="slide-container">
           <div class="testimonial-slide">
-            <div>
-              <blockquote>
-                <p class="testimonial-text">
-                  "I'm glad that I enrolled here in ACE. The instructors were
-                  very detailed and meticuluous when it comes to explaining the
-                  lessons. They make sure that each student can easily grasp the
-                  information about each topic."
-                </p>
-                <div class="testimonial-author">
-                  <p>John Steven S. Cruz</p>
-                  <p>Top 3, Chemist Licensure Exam 2022</p>
-                </div>
-              </blockquote>
-            </div>
+            <blockquote>
+              <p class="testimonial-text">
+                "I'm glad that I enrolled here in ACE. The instructors were very
+                detailed and meticulous when it comes to explaining the lessons,
+                making sure students can grasp th topic."
+              </p>
+              <div class="testimonial-author">
+                <p>John Steven S. Cruz</p>
+                <p>Top 3, Chemist Licensure Exam 2022</p>
+              </div>
+            </blockquote>
+
             <img class="testimonial-img" src="./img/john-steven.jpg" />
           </div>
 
           <div class="testimonial-slide">
-            <div>
-              <blockquote>
-                <p class="testimonial-text">
-                  "Each session of my review journey here at ACE was very
-                  engaging. The instructors reinforce the discussion by giving a
-                  lot of problems regarding the topic. Their catchy mnemonics
-                  helped me a lot in my journey as becoming a professional
-                  chemist."
-                </p>
-                <div class="testimonial-author">
-                  <p>Sofia C. Sy</p>
-                  <p>Top 1, Chemist Licensure Exam 2022</p>
-                </div>
-              </blockquote>
-            </div>
+            <blockquote>
+              <p class="testimonial-text">
+                "Each session of my review journey here at ACE was very
+                engaging. The instructors reinforce the discussion by giving a
+                lot of problems regarding the topic. Their catchy mnemonics also
+                helped me a lot."
+              </p>
+              <div class="testimonial-author">
+                <p>Sofia C. Sy</p>
+                <p>Top 1, Chemist Licensure Exam 2022</p>
+              </div>
+            </blockquote>
+
             <img class="testimonial-img" src="./img/sofia.jpg" />
           </div>
 
           <div class="testimonial-slide">
-            <div>
-              <blockquote>
-                <p class="testimonial-text">
-                  "They really prepare their students not only by teaching the
-                  topics and courses but also by giving tips and strategies on
-                  how to be ready on taking the examination. It is definitely
-                  true that choosing the right mentor makes a big difference."
-                </p>
-                <div class="testimonial-author">
-                  <p>Maria F. Guevarra</p>
-                  <p>Top 5, Chemical Technician Licensure Exam 2023</p>
-                </div>
-              </blockquote>
-            </div>
+            <blockquote>
+              <p class="testimonial-text">
+                "They really prepare their students not only by teaching the
+                topics and courses but also by giving tips and strategies on how
+                to be ready on taking the examination.
+              </p>
+              <div class="testimonial-author">
+                <p>Maria F. Guevarra</p>
+                <p>Top 5, Chemical Technician Licensure Exam 2023</p>
+              </div>
+            </blockquote>
+
             <img class="testimonial-img" src="./img/maria.jpg" />
           </div>
         </div>
 
         <i class="ph ph-atom background-icon atom-icon"></i>
         <i class="ph ph-flask background-icon flask-icon"></i>
+
+        <div class="dots"></div>
       </div>
     </section>
 
-    <section class="section section--programs">
+    <section class="section section--programs" id="programs">
       <span class="subheading">Program offerings</span>
       <div class="program-btn--container">
-        <button class="btn--tab btn--tab-active">Chem</button>
-        <button class="btn--tab">Chem Tech</button>
-        <button class="btn--tab">Food Tech</button>
+        <button class="btn--tab btn--tab-active" data-tab="1">Chem</button>
+        <button class="btn--tab" data-tab="2">Chem Tech</button>
+        <button class="btn--tab" data-tab="3">Food Tech</button>
       </div>
 
       <div class="tabs--container">
-        <div class="program--tab">
+        <div class="program--tab" data-program="1">
           <p class="program--title">Review for Chemistry Licensure Exam</p>
           <p class="program--info">
             June 23, 2024 - September 23, 2024 (Tuesday - Friday)
@@ -184,11 +190,11 @@
           <ul class="program--list">
             <li>
               <i class="ph ph-note-pencil program--icons"></i>
-              Preliminary examination for each subject
+              Preliminary exams and assessment
             </li>
             <li>
               <i class="ph ph-barbell program--icons"></i>
-              Assessment based on the preliminary results
+              Weekly problem tests
             </li>
             <li>
               <i class="ph ph-exam program--icons"></i>
@@ -209,10 +215,10 @@
             <button class="enroll-cta programs--cta">Enroll Now</button>
           </div>
         </div>
-        <div class="program--tab hidden">
+        <div class="program--tab hidden" data-program="2">
           <p class="program--title">Review for Chem Tech Licensure Exam</p>
           <p class="program--info">
-            June 23, 2024 - September 23, 2024 (Tuesday & Thursday)
+            May 29, 2024 - August 23, 2024 (Monday & Wednesday)
           </p>
           <ul class="program--list">
             <li>
@@ -221,7 +227,7 @@
             </li>
             <li>
               <i class="ph ph-barbell program--icons"></i>
-              Assessment based on the preliminary results
+              Bonus crash course for chem subjects
             </li>
             <li>
               <i class="ph ph-exam program--icons"></i>
@@ -232,14 +238,17 @@
               Eligible for job fair hosted by ACE
             </li>
           </ul>
-          <p class="program--fees">
-            Regular Fee: <span class="reg-fee">PHP 12,500.00</span> <br />
-            Early Bird Fee:
-            <strong class="discount-fee">PHP 11,000.00</strong>
-          </p>
-          <button class="enroll-cta program--btn">Enroll Now</button>
+          <div class="fee-container">
+            <p class="program--fees">
+              Regular Fee: <span class="reg-fee">PHP 12,500.00</span> <br />
+              Early Bird Fee:
+              <strong class="discount-fee">PHP 11,000.00</strong>
+            </p>
+
+            <button class="enroll-cta programs--cta">Enroll Now</button>
+          </div>
         </div>
-        <div class="program--tab hidden">
+        <div class="program--tab hidden" data-program="3">
           <p class="program--title">Review for Food Tech Licensure Exam</p>
           <p class="program--info">
             July 16, 2024 - October 16, 2024 (Monday - Thursday)
@@ -262,12 +271,15 @@
               Eligible for job fair hosted by ACE
             </li>
           </ul>
-          <p class="program--fees">
-            Regular Fee: <span class="reg-fee">PHP 13,500.00</span> <br />
-            Early Bird Fee:
-            <strong class="discount-fee">PHP 12,000.00</strong>
-          </p>
-          <button class="enroll-cta program--btn">Enroll Now</button>
+          <div class="fee-container">
+            <p class="program--fees">
+              Regular Fee: <span class="reg-fee">PHP 13,500.00</span> <br />
+              Early Bird Fee:
+              <strong class="discount-fee">PHP 12,000.00</strong>
+            </p>
+
+            <button class="enroll-cta programs--cta">Enroll Now</button>
+          </div>
         </div>
       </div>
     </section>
@@ -276,7 +288,7 @@
       <div class="footer--grid">
         <div>
           <a href="#">
-            <img class="footer--logo" src="./img/ace-logo.png" />
+            <img class="footer--logo" src="./img/acereview-logo.png" />
           </a>
           <p class="copyright">
             Copyright &copy; <span class="current-year">2024</span> by ACE
@@ -284,7 +296,7 @@
           </p>
         </div>
         <div>
-          <p class="footer-heading">Address & Contact Details</p>
+          <p class="footer-heading">Address</p>
           <p class="address">
             <i class="ph ph-map-pin footer-icon"></i> 23 Lerma St. Sampaloc,
             Manila, Philippines
@@ -379,7 +391,7 @@
             </select>
           </div>
 
-          <button class="btn--submit">Submit</button>
+          <button type="submit" class="btn--submit">Submit</button>
         </form>
         <button class="btn--close-modal">
           <i class="ph ph-x close-modal-icon"></i>
