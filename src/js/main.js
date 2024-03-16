@@ -155,9 +155,6 @@ dotContainer.addEventListener("click", (e) => {
 
 init();
 
-// const heroBtnPrimary = document.querySelector(".hero-btn--primary");
-// const heroBtnSecondary = document.querySelector(".hero-btn--secondary");
-
 const heroBtnContainer = document.querySelector(".hero-btn-container");
 const footerContainer = document.querySelector(".footer--grid");
 const scrollWindow = function (e) {
@@ -200,16 +197,72 @@ footerContainer.addEventListener("click", (e) => {
 // Sticky navigation bar/header
 
 const sectionWhy = document.querySelector(".section--why");
+const heroSection = document.querySelector(".section--hero");
 
-const obsCallback = function (entries, observer) {
-  entries.forEach((entry) => {
-    console.log(entry);
-  });
+const headerHeight = header.getBoundingClientRect().height;
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    header.classList.add("sticky-nav");
+    document.body.style.marginTop = `${headerHeight}px`;
+  } else {
+    header.classList.remove("sticky-nav");
+    document.body.style.marginTop = "0";
+  }
 };
 
-// const obsOptions = {
-//   root: null,
-//   threshold: 0.1,
-// };
-// const observer = new IntersectionObserver(obsCallback, obsOptions);
-// observer.observe(sectionWhy);
+const heroObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${headerHeight}px`,
+});
+
+heroObserver.observe(heroSection);
+
+// Reveal Section
+const sections = document.querySelectorAll(".section");
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+sections.forEach((section) => {
+  section.classList.add("section--hidden");
+  sectionObserver.observe(section);
+});
+
+// Highlight active section link
+
+const switchLink = function (entries) {
+  const [entry] = entries;
+  const linkContainer = document.querySelector(
+    `[href='#${entry.target.id}']`
+  ).parentElement;
+
+  console.log(entry);
+  if (!entry.isIntersecting) return;
+
+  const allLinks = [...linkContainer.parentElement.children];
+  allLinks.forEach((link) => link.classList.remove("active-link"));
+  linkContainer.classList.add("active-link");
+};
+console.log(window.innerWidth);
+
+const thresholdValue = window.innerWidth > 620 ? 0.8 : 0.6;
+
+const sectionObserverLink = new IntersectionObserver(switchLink, {
+  root: null,
+  threshold: thresholdValue,
+});
+
+sections.forEach((section) => {
+  sectionObserverLink.observe(section);
+});

@@ -36,9 +36,9 @@
     gap: 2.2rem;
   }
 
-  .nav-list li {
+  /* .nav-list li {
     padding: 0 0.8rem;
-  }
+  } */
 
   /* HERO */
 
@@ -117,6 +117,9 @@
     bottom: 0;
     left: 0;
     right: 0;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
     background-color: rgba(237, 252, 243, 0.9);
     gap: 4.4em;
 
@@ -176,6 +179,9 @@
 
   /* HERO */
 
+  .header {
+    height: 7.2rem;
+  }
   .heading-primary {
     font-size: 4.2rem;
   }
@@ -304,7 +310,7 @@
 
 @media (max-width: 38em) {
   .section {
-    padding: 6.4rem 4.8rem;
+    padding: 8rem 4.8rem;
   }
 
   /* HEADER */
@@ -321,6 +327,9 @@
     font-size: 2.4rem;
   }
 
+  .nav-open .menu-btn {
+    right: 3.2rem;
+  }
   /* HERO */
   .section--hero {
     padding: 2.4rem 0 6.4rem 0;
@@ -329,11 +338,20 @@
   .hero {
     padding: 0 3.8rem;
   }
+
+  .hero-btn:link,
+  .hero-btn:visited {
+    padding: 1.6rem;
+  }
   /* WHY US */
   .why-us-container {
     grid-template-columns: 1fr;
     max-width: 38rem;
-    gap: 4.2;
+    gap: 2.2rem;
+  }
+
+  .feature-box {
+    padding: 2.8rem;
   }
 
   /* PROGRAMS */
@@ -368,6 +386,11 @@
   /* TESTIMONIALS */
   .testimonial-author {
     line-height: 1.2;
+  }
+
+  /* MODAL */
+  .modal-heading {
+    font-size: 1.8rem;
   }
 
   /* FOOTER */

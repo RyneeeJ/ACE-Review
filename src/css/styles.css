@@ -28,8 +28,15 @@ body {
 .section {
   padding: 9.6rem 0;
   width: 100vw;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s;
 }
 
+.section.section--hidden {
+  opacity: 0;
+  transform: translateY(10rem);
+}
 .subheading {
   text-transform: uppercase;
   color: var(--primary-green-color);
@@ -70,12 +77,23 @@ body {
 /* Header */
 /**************************************/
 .header {
-  height: 9.6rem;
+  height: 9rem;
   display: flex;
   align-items: center;
   padding: 0 5.2rem;
   background-color: var(--green-tint-color1);
   justify-content: space-between;
+}
+
+.header.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  background-color: rgba(255, 255, 255, 0.97);
+
+  z-index: 40;
+  box-shadow: 0 0px 1px rgba(154, 154, 154, 0.9);
 }
 
 .ace-logo {
@@ -101,13 +119,17 @@ body {
 
 .nav-list li {
   transition: all 0.3s;
-  padding: 0 1.8rem;
   border-radius: 0.6rem;
-  cursor: pointer;
 }
 
 .nav-list li:hover {
   background-color: var(--green-tint-color2);
+}
+
+.nav-list li.active-link,
+.sticky-nav,
+.nav-link li {
+  background-color: var(--green-tint-color1);
 }
 
 .nav-link:link,
@@ -122,6 +144,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 1.8rem;
 }
 
 .menu-btn {
@@ -129,7 +152,7 @@ body {
   align-items: center;
   justify-content: center;
   border: none;
-  background-color: inherit;
+  background-color: transparent;
   z-index: 20;
 }
 
@@ -139,6 +162,7 @@ body {
 
 .nav-open .nav-container {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .btn-close-menu {
@@ -158,6 +182,9 @@ body {
   display: none;
 }
 
+.nav-open li.active-link {
+  background-color: var(--green-tint-color2);
+}
 /**************************************/
 /* Hero Section */
 /**************************************/
@@ -638,7 +665,7 @@ body {
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 80%;
+  width: 85%;
   column-gap: 2.2rem;
   row-gap: 2.8rem;
 }
@@ -673,6 +700,7 @@ body {
   display: inline-block;
   font-size: 1.2rem;
   color: #b5bec2;
+  text-align: center;
 }
 
 .btn--submit {
